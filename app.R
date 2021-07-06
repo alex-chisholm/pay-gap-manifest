@@ -11,7 +11,6 @@ library(shiny)
 library(readr) 
 library(tidyverse) 
 library(shinyWidgets)
-# https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/lowersuperoutputareamidyearpopulationestimates
 
 # load data ---------------------------
 # url <- "https://gender-pay-gap.service.gov.uk/viewing/download-data/2020"
