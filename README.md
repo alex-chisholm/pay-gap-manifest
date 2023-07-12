@@ -8,11 +8,7 @@ Nottinghamshire Healthcare NHS Trust (amongst others) now has a negative percent
 
 Where an organisation has greater than -100% difference, this has been changed to -100% (or a full year) for the purposes of showing the difference by calendar day.
 
-### Shiny app
-
-The shiny app was created for the Gender Identity, Gender and Sexual Orientation group at [Nottinghamshire Healthcare NHS Foundation Trust](https://www.nottinghamshirehealthcare.nhs.uk/) and is hosted on the RStudio server [here](https://involve.nottshc.nhs.uk:8443/pay-gap/).
-
-### Data 2020/21
+### Data
 
 The data is loaded for this app to run and can be updated from the [UK Government site](https://gender-pay-gap.service.gov.uk/viewing/download-data/2020):
 
@@ -20,4 +16,9 @@ The data is loaded for this app to run and can be updated from the [UK Governmen
 # load data ---------------------------
 url <- "https://gender-pay-gap.service.gov.uk/viewing/download-data/2020"
 download.file(url, dest = "pay-gap-202021.csv")
+```
+```{r}
+# load data ---------------------------
+url <- "https://gender-pay-gap.service.gov.uk/viewing/download-data/2022"
+download.file(url, dest = "pay-gap-202223.csv")
 ```
