@@ -13,12 +13,12 @@ library(tidyverse)
 library(shinyWidgets)
 
 # load data ---------------------------
-# url <- "https://gender-pay-gap.service.gov.uk/viewing/download-data/2020"
-# download.file(url, dest = "pay-gap-202021.csv")
+# url <- "https://gender-pay-gap.service.gov.uk/viewing/download-data/2022"
+# download.file(url, dest = "pay-gap-202223.csv")
 
 # Also recode greater than -100% to 100% for conversion to date percentages
 
-raw <- read_csv(here::here("pay-gap-202021.csv")) %>% 
+raw <- read_csv(here::here("pay-gap-202223.csv")) %>% 
     janitor::clean_names() %>% 
     select(employer_name,
            diff_mean_hourly_percent,
