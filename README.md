@@ -1,3 +1,8 @@
+# Adding manifest.json file
+
+library(rsconnect)
+writeManifest()
+
 # UK organisation pay gap
 
 UK organisation pay gap Shiny application to show mean and median in terms of date where equal pay stops.
